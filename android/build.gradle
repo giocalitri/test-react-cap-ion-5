@@ -27,25 +27,3 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
-
-android {
-    compileSdk 31
-    buildToolsVersion "31.0.0"
-
-    defaultConfig {
-        applicationId "com.example.android12"
-        minSdk 21
-        targetSdk 31
-        versionCode 1
-        versionName "1.0"
-    }
-
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
-    kotlinOptions {
-        jvmTarget = '1.8'
-    }
-}
-
